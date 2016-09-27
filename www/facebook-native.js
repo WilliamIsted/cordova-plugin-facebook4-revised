@@ -47,6 +47,11 @@ exports.apiPost = function apiPost (graphPath, permissions, s, f) {
   exec(s, f, 'FacebookConnectPlugin', 'graphApiPost', [graphPath, permissions])
 }
 
+exports.apiDelete = function apiDelete (graphPath, permissions, s, f) {
+  permissions = permissions || []
+  exec(s, f, 'FacebookConnectPlugin', 'graphApiDelete', [graphPath, permissions])
+}
+
 exports.eventPost = function eventPost (graphPath, permissions, s, f) {
   permissions = permissions || []
   exec(s, f, 'FacebookConnectPlugin', 'eventPost', [graphPath, permissions])

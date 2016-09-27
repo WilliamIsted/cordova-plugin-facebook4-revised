@@ -24,6 +24,7 @@
 - (void)logout:(CDVInvokedUrlCommand *)command;
 - (void)graphApi:(CDVInvokedUrlCommand *)command;
 - (void)graphApiPost:(CDVInvokedUrlCommand *)command;
+- (void)graphApiDelete:(CDVInvokedUrlCommand *)command;
 - (void)showDialog:(CDVInvokedUrlCommand *)command;
 - (void)appInvite:(CDVInvokedUrlCommand *) command;
 - (void)getDeferredApplink:(CDVInvokedUrlCommand *) command;
